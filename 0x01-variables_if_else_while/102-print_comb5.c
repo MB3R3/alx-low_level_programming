@@ -2,31 +2,32 @@
 /**
  * main - Entry point
  *
- * Return: 0
+ * Return: Always 0.
  */
 int main(void)
 {
-	int numR;
+	int numLeft;
 
-	int numL;
+	int numLast;
 
-	int minL = 48;
-
-	for (numL = 48; numL <= 57; numL++)
+	for (numLeft = 0; numLeft < 100; numLeft++)
 	{
-	for (numR = minL++; numR <= 57; numR++)
-	{
-	if (numR != numL)
-	{
-	putchar(numL);
-	putchar(numR);
-	if (!(numR == 57 && numL == 56))
-	{
-	putchar(',');
-	putchar(' ');
-	}
-	}
-	}
+		for (numLast = 0; numLast < 100; numLast++)
+		{
+			if (numLeft < numLast)
+			{
+				putchar(numLeft / 10 + 48);
+				putchar(numLeft % 10 + 48);
+				putchar(32);
+				putchar(numLast / 10 + 48);
+				putchar(numLast % 10 + 48);
+				if (numLeft < 98)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
