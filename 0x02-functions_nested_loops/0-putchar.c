@@ -1,4 +1,5 @@
-#include <main.h>
+#include "main.h"
+#include <stdio.h>
 /**
  * Main - Entry point
  * Description prints _putchar followed by a new line
@@ -9,7 +10,7 @@ int main(void)
 {
 	char putchar[] = "_putchar";
 
-	_putchar("%c\n", putchar);
+	putchar("%c\n", putchar);
 	return (0);
 }
 
