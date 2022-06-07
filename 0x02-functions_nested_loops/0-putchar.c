@@ -1,16 +1,13 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 /**
  * Main - Entry point
  * Description prints _putchar followed by a new line
  * Return 0 - always
  */
 
-int main(void)
+int _putchar(char c) 
 {
-	char putchar[] = "_putchar";
-
-	putchar("%c\n", putchar);
-	return (0);
+	return (write(1, &c, 1));
 }
 
