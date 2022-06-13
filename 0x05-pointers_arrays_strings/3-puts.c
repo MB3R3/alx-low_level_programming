@@ -1,5 +1,7 @@
 #include "main.h"
 
+
+
 /**
  * _puts - prints a string, followed by a new line.
  *
@@ -10,7 +12,6 @@
 
 void _puts(char *str)
 {
-
 	int count = 0;
 
 	while (count >= 0)
@@ -21,9 +22,9 @@ void _puts(char *str)
 
 		{
 
-		_putchar('\n');
+			_putchar('\n');
 
-		break;
+			break;
 
 		}
 
